@@ -4,8 +4,15 @@ const firstName = document.getElementById("name");
 const allInputs = document.getElementsByClassName("label");
 console.log(allInputs);
 
-// post form action
+// post form actions
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  document.body.textContent = `Thanks for signing up, ${firstName.value}!`;
+  postActionStyles();
 });
+
+// inline styling for post submit
+function postActionStyles() {
+  document.body.style.textAlign = "center";
+  document.body.style.fontSize = "40px";
+  document.body.textContent = `Thanks for signing up, ${firstName.value}!`;
+}
