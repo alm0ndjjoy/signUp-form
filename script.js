@@ -14,5 +14,7 @@ function postActionStyles() {
   document.body.style.fontFamily = "'Hammersmith One', sans-serif";
   document.body.style.backgroundColor = "#F2F2F2";
   document.body.style.fontSize = "40px";
-  document.body.textContent = `Thanks for signing up, ${firstName.value.toUpperCase()}!`;
+  document.body.textContent = `Thanks for signing up, ${firstName.value
+    .charAt(0)
+    .toUpperCase()}${firstName.value.slice(1).toLowerCase()}!`;
 }
