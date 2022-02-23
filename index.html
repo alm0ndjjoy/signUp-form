@@ -37,6 +37,7 @@
         <div class="col-md-6">
           <input
             id="name"
+            pattern="[a-zA-Z]+"
             type="text"
             class="form-control"
             placeholder="First name"
@@ -45,6 +46,7 @@
         </div>
         <div class="col-md-6">
           <input
+            pattern="[a-zA-Z]+"
             type="text"
             class="form-control"
             placeholder="Last name"
@@ -148,7 +150,13 @@
         </div>
         <div class="col-md-2">
           <label for="inputZip" class="form-label">Zip</label>
-          <input required type="text" class="form-control" id="inputZip" />
+          <input
+            pattern="[0-9]"
+            required
+            type="text"
+            class="form-control"
+            id="inputZip"
+          />
         </div>
         <!-- terms&condition check off -->
         <div class="col-12">
